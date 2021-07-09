@@ -1,0 +1,10 @@
+<p>Parent Comp</p>
+<input type="text" [(ngModel)]="parentData">
+<app-child1 #child1 [data]="parentData">
+  <p>These contents to be added using ng-content</p>
+  <p #para1>I am adding the component to be projected as ng-content
+
+  </p>
+  <app-child2>
+  </app-child2>
+</app-child1>
